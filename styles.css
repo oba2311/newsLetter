@@ -110,6 +110,10 @@ body > main > section.companies > h2 {
 	cursor: pointer;
 }
 
+iframe {
+	border-width: 0px;
+}
+
 /* Footer styling */
 footer {
 	text-align: center;
