@@ -112,6 +112,7 @@ body > main > section.companies > h2 {
 
 iframe {
 	border-width: 0px;
+	width: 90%;
 }
 
 /* Footer styling */
