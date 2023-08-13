@@ -1,0 +1,178 @@
+/* Reset some default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+/* Basic styling for the page */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	display: flex col;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+/* Banner styling */
+.banner {
+	width: 100%; /* Make sure the banner takes up the full width */
+	/* max-height: 10vh; */
+	/* margin-top: 120px; */
+	text-align: center;
+}
+
+.banner img {
+	max-width: 100%; /* Ensure the image scales within the banner */
+	max-height: 100%; /* Maintain aspect ratio */
+}
+
+/* Header styling */
+
+/* Header styling */
+header h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+body > main > section.companies > h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.companies {
+	width: 60%; /* Set to 80% of the screen width */
+	margin: 0 auto; /* Center-align the section */
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Company logos styling */
+.company-logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	/* gap: 30px; */
+	margin: 20px 0;
+}
+
+.company-logos img {
+	max-width: 100px;
+	height: auto;
+}
+
+/* Signup form styling */
+.signup {
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.signup h2 {
+	font-size: 1.8rem;
+	margin-bottom: 10px;
+}
+
+.signup form {
+	display: flex;
+	max-width: 50%;
+	margin: auto;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.signup input[type="email"] {
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.signup button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* Footer styling */
+footer {
+	text-align: center;
+	background-color: #f4f4f4;
+	border-top: 1px solid #ccc;
+	padding: 10px 0;
+	width: 100%;
+	position: sticky;
+	bottom: 0;
+}
+
+/* Samples styling */
+.samples {
+	margin: 20px 0;
+	justify-content: center;
+	display: flex col;
+}
+
+.samples h3 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.samples-logos {
+	display: grid;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.samples img {
+	max-width: 40%;
+	margin: auto auto 10px auto;
+	align-items: center;
+	display: flex;
+	border: 1px solid #007bff;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+	header h1 {
+		font-size: 2rem;
+	}
+
+	.signup h2 {
+		font-size: 1.5rem;
+	}
+
+	.company-logos {
+		flex-direction: row;
+	}
+
+	.company-logos img {
+		max-width: 70px;
+		margin: 0 5px;
+	}
+
+	/* Samples styling */
+	.samples img {
+		max-width: 270px;
+		justify-content: center;
+		align-items: center;
+		margin: 10px;
+		border: 1px solid #007bff;
+	}
+}
